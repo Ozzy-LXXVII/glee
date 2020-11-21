@@ -2,6 +2,11 @@ html,
 body{
     height: 100%;
 }
+a,
+input,
+button{
+    outline-color: $default-color;
+}
 body{
     display: flex;
     flex-direction: column;
