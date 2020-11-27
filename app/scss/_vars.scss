@@ -1,7 +1,35 @@
-$default-color: #7b7b7b;
+$color-text: #7b7b7b;
+$color-title: #191919;
+$color-title-light:  #8b8b8b;
+$color-primary: #fcd7b6;
+$color-primary-light1: #feefe2;
+$color-primary-light2: #fef7f0;
+$color-secondary: #a3bbc8;
+$color-secondary-dark1: #243f4d;
 
 %Rubik-400{
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
     line-height: 24px;
+}
+%btn-arrow{
+    display: inline-block;
+    min-width: 180px;
+    height: 60px;
+    padding: 0 50px 0 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 58px;
+    transition: all 0.3s;
+    position: relative;
+    &::after{
+        content: "\e907";
+        font-family: 'icomoon' !important;
+        position: absolute;
+        font-size: 9px;
+        line-height: inherit;
+        right: 15px;
+        top: 0;
+    }
 }
