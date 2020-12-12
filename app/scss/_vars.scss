@@ -6,11 +6,16 @@ $color-primary-light1: #feefe2;
 $color-primary-light2: #fef7f0;
 $color-secondary: #a3bbc8;
 $color-secondary-dark1: #243f4d;
+$color-secondary-dark2: #436372;
 
 %Rubik-400{
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
     line-height: 24px;
+}
+%hover{
+    color: $color-primary;
+    text-shadow: 1px 1px 1px $color-title;
 }
 %btn-arrow{
     display: inline-block;
@@ -32,4 +37,20 @@ $color-secondary-dark1: #243f4d;
         right: 15px;
         top: 0;
     }
+}
+
+%checkbox-hidden,
+%radio-hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
 }

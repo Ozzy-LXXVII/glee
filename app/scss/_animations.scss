@@ -49,4 +49,16 @@
     opacity: 1;
     transform: translateY(10px);
 }
-  
+
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(163, 187, 200, 1);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(163, 187, 200, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(163, 187, 200, 0);
+  }
+}
