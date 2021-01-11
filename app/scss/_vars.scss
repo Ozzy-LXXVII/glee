@@ -8,10 +8,21 @@ $color-secondary: #a3bbc8;
 $color-secondary-dark1: #243f4d;
 $color-secondary-dark2: #436372;
 
+%Rubik-300{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
 %Rubik-400{
     font-family: 'Rubik', sans-serif;
-    font-size: 14px;
-    line-height: 24px;
+    font-weight: 400;
+}
+%Rubik-500{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+%Rubik-700{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
 }
 %hover{
     color: $color-primary;
@@ -22,19 +33,18 @@ $color-secondary-dark2: #436372;
     min-width: 180px;
     height: 60px;
     padding: 0 50px 0 20px;
-    font-family: 'Rubik', sans-serif;
+    @extend %Rubik-500;
     font-size: 15px;
-    font-weight: 500;
     line-height: 58px;
     transition: all 0.3s;
     position: relative;
     &::after{
-        content: "\e907";
+        content: "\1f396";
         font-family: 'icomoon' !important;
         position: absolute;
         font-size: 9px;
         line-height: inherit;
-        right: 15px;
+        right: 20px;
         top: 0;
     }
 }

@@ -30,7 +30,7 @@
                         </ul>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                        <a class="menu__list-link" href="about.html">
                             About
                         </a>
                     </li>
@@ -53,12 +53,17 @@
                         </ul>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
-                            News
+                        <a class="menu__list-link  menu__list-item--dropdown" href="#">
+                            News +
                         </a>
+                        <ul class="menu__submenu-list">
+                            <li class="menu__submenu-item">
+                                <a class="menu__submenu-link" href="blog.html">Blog</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                        <a class="menu__list-link" href="contact.html">
                             Contact
                         </a>
                     </li>
@@ -75,7 +80,7 @@
                     </a>
                     <a class="user-nav__link" href="#">
                         <i class="icon-cart"></i>
-                        <span class="user-nav__num">100</span>
+                        <span class="user-nav__num">0</span>
                     </a>
                 </div>
                 <a class="user-nav__link  user-nav__link--dots" href="#">
@@ -114,8 +119,8 @@
                             <input class="login__input" type="password" required>
                         </label>
                         <button class="login__btn" type="submit">Login</button>
-                        <label class="login__label  login__label-checkbox">
-                            <input class="login__checkbox" type="checkbox">
+                        <input class="login__checkbox" id="checkbox_1" type="checkbox" checked>
+                        <label class="login__label  login__label-checkbox" for="checkbox_1">
                             Remember me
                         </label>
                         <a class="login__passrecovery" href="#">
@@ -137,36 +142,21 @@
 
         <div class="partners">
             <div class="container">
-                <div class="partners-slider">
-                    <div class="partners-slider__item-wrap">
-                        <div class="partners-slider__item">
-                            <img class="partners-slider__img" src="images/partners/1.png" alt="partner logo">
-                        </div>
+                <div class="partners__inner">
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/1.png" alt="partner logo">
                     </div>
-                    <div class="partners-slider__item-wrap">
-                        <div class="partners-slider__item">
-                            <img class="partners-slider__img" src="images/partners/2.png" alt="partner logo">
-                        </div>
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/2.png" alt="partner logo">
                     </div>
-                    <div class="partners-slider__item-wrap">
-                        <div class="partners-slider__item">
-                            <img class="partners-slider__img" src="images/partners/3.png" alt="partner logo">
-                        </div>
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/3.png" alt="partner logo">
                     </div>
-                    <div class="partners-slider__item-wrap">
-                        <div class="partners-slider__item">
-                            <img class="partners-slider__img" src="images/partners/4.png" alt="partner logo">
-                        </div>
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/4.png" alt="partner logo">
                     </div>
-                    <div class="partners-slider__item-wrap">
-                        <div class="partners-slider__item">
-                            <img class="partners-slider__img" src="images/partners/5.png" alt="partner logo">
-                        </div>
-                    </div>
-                    <div class="partners-slider__item-wrap">
-                        <div class="partners-slider__item">
-                            <img class="partners-slider__img" src="images/partners/3.png" alt="partner logo">
-                        </div>
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/5.png" alt="partner logo">
                     </div>
                 </div>
             </div>
@@ -272,7 +262,7 @@
         </div>
     </footer>
 
-    <script src="/js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

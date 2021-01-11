@@ -30,7 +30,7 @@
                         </ul>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                        <a class="menu__list-link" href="about.html">
                             About
                         </a>
                     </li>
@@ -53,12 +53,17 @@
                         </ul>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
-                            News
+                        <a class="menu__list-link  menu__list-item--dropdown" href="#">
+                            News +
                         </a>
+                        <ul class="menu__submenu-list">
+                            <li class="menu__submenu-item">
+                                <a class="menu__submenu-link" href="blog.html">Blog</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">
+                        <a class="menu__list-link" href="contact.html">
                             Contact
                         </a>
                     </li>
@@ -75,7 +80,7 @@
                     </a>
                     <a class="user-nav__link" href="#">
                         <i class="icon-cart"></i>
-                        <span class="user-nav__num">100</span>
+                        <span class="user-nav__num">0</span>
                     </a>
                 </div>
                 <a class="user-nav__link  user-nav__link--dots" href="#">
@@ -143,7 +148,7 @@
             <div class="intro__items">
                 <div class="intro__item">
                     <div class="intro__item-inner">
-                        <img class="intro__item-img" src="images/intro-icon-1.svg" alt="icon">
+                        <img class="intro__item-img" src="images/icons/intro-icon-1.svg" alt="icon">
                         <h5 class="intro__item-title">
                             Support 24/7.
                         </h5>
@@ -156,7 +161,7 @@
 
                 <div class="intro__item">
                     <div class="intro__item-inner">
-                        <img class="intro__item-img" src="images/intro-icon-2.svg" alt="icon">
+                        <img class="intro__item-img" src="images/icons/intro-icon-2.svg" alt="icon">
                         <h5 class="intro__item-title">
                             Delivery.
                         </h5>
@@ -168,7 +173,7 @@
 
                 <div class="intro__item">
                     <div class="intro__item-inner">
-                        <img class="intro__item-img" src="images/intro-icon-3.svg" alt="icon">
+                        <img class="intro__item-img" src="images/icons/intro-icon-3.svg" alt="icon">
                         <h5 class="intro__item-title">
                             100% Payment secure.
                         </h5>
@@ -417,7 +422,7 @@
             </div>
             <div class="products-bottom">
                 <div class="products-bottom__item">
-                    <div class="products-bottom__item-image  hvr-float-shadow">
+                    <div class="products-bottom__item-image">
                         <img class="products-bottom__item-img" src="images/products/bottom/01.png" alt="products photo">
                     </div>
                     <div class="products-bottom__item-info">
@@ -427,7 +432,7 @@
                         <div class="products-bottom__item-text">
                             LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
                         </div>
-                        <a class="products-bottom__item-link" href="#">
+                        <a class="products-bottom__item-link" href="product.html">
                             View More
                         </a>
 
@@ -435,7 +440,7 @@
                 </div>
 
                 <div class="products-bottom__item">
-                    <div class="products-bottom__item-image   hvr-float-shadow">
+                    <div class="products-bottom__item-image">
                         <img class="products-bottom__item-img" src="images/products/bottom/02.png" alt="products photo">
                     </div>
                     <div class="products-bottom__item-info">
@@ -445,7 +450,7 @@
                         <div class="products-bottom__item-text">
                             50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
                         </div>
-                        <a class="products-bottom__item-link" href="#">
+                        <a class="products-bottom__item-link" href="product.html">
                             View More
                         </a>
                     </div>
@@ -577,7 +582,7 @@
                         </a>
                         <div class="articles__item-content">
                             <a class="articles__item-link" href="#">news</a>
-                            <a href="#" class="articles__item-text">
+                            <a class="articles__item-text" href="#">
                                 Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                             </a>
                             <div class="articles__item-bottom">
@@ -596,7 +601,7 @@
                         </a>
                         <div class="articles__item-content">
                             <a class="articles__item-link" href="#">news</a>
-                            <a href="#" class="articles__item-text">
+                            <a class="articles__item-text" href="#">
                                 Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                 Rncididunt ut labore et dolore magna aliqua. Ut enim
                             </a>
@@ -616,7 +621,7 @@
                         </a>
                         <div class="articles__item-content">
                             <a class="articles__item-link" href="#">news</a>
-                            <a href="#" class="articles__item-text">
+                            <a class="articles__item-text" href="#">
                                 Rncididunt ut labore et dolore magna aliqua. Ut enim
                             </a>
                             <div class="articles__item-bottom">
@@ -635,36 +640,21 @@
 
         <div class="partners">
             <div class="container">
-                <div class="partners-slider">
-                    <div class="partners-slider__item-wrap">
-                        <div class="partners-slider__item">
-                            <img class="partners-slider__img" src="images/partners/1.png" alt="partner logo">
-                        </div>
+                <div class="partners__inner">
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/1.png" alt="partner logo">
                     </div>
-                    <div class="partners-slider__item-wrap">
-                        <div class="partners-slider__item">
-                            <img class="partners-slider__img" src="images/partners/2.png" alt="partner logo">
-                        </div>
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/2.png" alt="partner logo">
                     </div>
-                    <div class="partners-slider__item-wrap">
-                        <div class="partners-slider__item">
-                            <img class="partners-slider__img" src="images/partners/3.png" alt="partner logo">
-                        </div>
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/3.png" alt="partner logo">
                     </div>
-                    <div class="partners-slider__item-wrap">
-                        <div class="partners-slider__item">
-                            <img class="partners-slider__img" src="images/partners/4.png" alt="partner logo">
-                        </div>
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/4.png" alt="partner logo">
                     </div>
-                    <div class="partners-slider__item-wrap">
-                        <div class="partners-slider__item">
-                            <img class="partners-slider__img" src="images/partners/5.png" alt="partner logo">
-                        </div>
-                    </div>
-                    <div class="partners-slider__item-wrap">
-                        <div class="partners-slider__item">
-                            <img class="partners-slider__img" src="images/partners/3.png" alt="partner logo">
-                        </div>
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/5.png" alt="partner logo">
                     </div>
                 </div>
             </div>
@@ -770,7 +760,7 @@
         </div>
     </footer>
 
-    <script src="/js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
     <script>
         $(function () {
             let mixer = mixitup('.products__items', {

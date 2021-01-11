@@ -28,6 +28,16 @@
 }
 
 @font-face {
+    font-family: 'Rubik';
+    src: local('Rubik Bold'), local('Rubik-Bold'),
+        url('../Rubik-Bold.woff2') format('woff2'),
+        url('../Rubik-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'DM Sans';
     src: local('DM Sans Regular'), local('DMSans-Regular'),
         url('../fonts/DMSans-Regular.woff2') format('woff2'),
@@ -68,53 +78,76 @@
 }
 
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?j8xgui');
-    src:  url('../fonts/icomoon.eot?j8xgui#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?j8xgui') format('truetype'),
-      url('../fonts/icomoon.woff?j8xgui') format('woff'),
-      url('../fonts/icomoon.svg?j8xgui#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-search:before {
-    content: "\e900";
-  }
-  .icon-search2:before {
-    content: "\e901";
-  }
-  .icon-heart:before {
-    content: "\e902";
-  }
-  .icon-heart2:before {
-    content: "\e903";
-  }
-  .icon-cart:before {
-    content: "\e904";
-  }
-  .icon-cart2:before {
-    content: "\e905";
-  }
-  .icon-dots:before {
-    content: "\e906";
-  }
-  .icon-arrow:before {
-    content: "\e907";
-  }
-  
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?wo8lo0');
+  src:  url('../fonts/icomoon.eot?wo8lo0#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?wo8lo0') format('truetype'),
+    url('../fonts/icomoon.woff?wo8lo0') format('woff'),
+    url('../fonts/icomoon.svg?wo8lo0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e900";
+}
+.icon-search2:before {
+  content: "\e901";
+}
+.icon-search3:before {
+  content: "\e907";
+}
+.icon-heart:before {
+  content: "\e902";
+}
+.icon-heart2:before {
+  content: "\e903";
+}
+.icon-cart:before {
+  content: "\e904";
+}
+.icon-cart2:before {
+  content: "\e905";
+}
+.icon-dots:before {
+  content: "\e906";
+}
+.icon-user:before {
+  content: "\e908";
+}
+.icon-calendar:before {
+  content: "\e909";
+}
+.icon-arrow-prev:before {
+  content: "\e90a";
+}
+.icon-arrow-next:before {
+  content: "\1f396";
+}
+.icon-arrow-prev2:before {
+  content: "\e90b";
+}
+.icon-arrow-next2:before {
+  content: "\e90c";
+}
+.icon-angle-left:before {
+  content: "\e90d";
+}
+.icon-angle-right:before {
+  content: "\e90e";
+}

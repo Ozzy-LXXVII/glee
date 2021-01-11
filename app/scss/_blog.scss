@@ -1,0 +1,196 @@
+.blog{
+    &__inner{
+        padding: 120px 0 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content{
+        margin-right: 70px;
+    }
+    &__aside{
+        min-width: 270px;
+    }
+    .pagination{
+        justify-content: start;
+        margin-bottom: 120px;
+    }
+}
+.blog-item{
+    margin-bottom: 50px;
+    &__img-link{
+        display: block;
+        max-width: 830px;
+        height: 500px;
+        overflow: hidden;
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: all 0.7s;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    &__info{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        min-width: 270px;
+        height: 70px;
+        background-color: $color-secondary;
+        position: relative;
+        top: -70px;
+    }
+    &__date,
+    &__author{
+        @extend %Rubik-400;
+        font-size: 12px;
+        color: #fff;
+        padding-left: 20px;
+        margin-right: 25px;
+        position: relative;
+        transition: all 0.3s;
+        &::before{
+            font-family: 'icomoon' !important;
+            font-size: 12px;
+            line-height: inherit;
+            color: inherit;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__date::before{
+        content: "\e909";
+        top: -1px;
+    }
+    &__author::before{
+        content: "\e908";
+    }
+    &__author:hover{
+        color: #000;
+        text-decoration: underline;
+    }
+    &__title{
+        margin: -35px 0 30px;
+    }
+    &__title-link{
+        @extend %Rubik-400;
+        font-size: 36px;
+        color: #333;
+        transition: all 0.3s;
+        &:hover{
+            @extend %hover;
+        }
+    }
+    &__text{
+        @extend %Rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $color-secondary-dark1;
+        margin-bottom: 30px;
+    }
+    &__btn{
+        @extend %btn-arrow;
+        min-width: 180px;
+        padding: 0 50px 0 25px;
+        color: $color-secondary;
+        border: 1px solid $color-secondary;
+        &:hover{
+            background-color: #436372;
+            color: #fff;
+        }
+    }
+}
+
+.filter-search{
+    &__form{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 40px;
+        border: 1px solid #edf1f4;
+        border-radius: 5px;
+    }
+    &__input{
+        flex-grow: 1;
+        border: none;
+        margin-right: 1px;
+        padding: 0 8px;
+        background-color: transparent;
+        @extend %Rubik-400;
+        font-size: 16px;
+    }
+    &__btn{
+        cursor: pointer;
+        margin: -1px -1px 0 0;
+        flex: 0 0 50px;
+        height: 40px;
+        background-color: #edf1f4;
+        border-radius: 5px;
+        border: none;
+        position: relative;
+        &::before{
+            content: "\e907";
+            font-family: 'icomoon' !important;
+            font-size: 20px;
+            color: inherit;
+            position: absolute;
+            left: 16px;
+            top: 5px;
+        }
+    }
+}
+.posts-recent{
+    .posts-item{
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 25px;
+        &__img-wrap{
+            width: 67px;
+            height: 67px;
+            margin-right: 15px;
+            border: 2px solid #f2f2f2;
+            background-color: #fefefe;
+        }
+        &__img{
+            object-fit: scale-down;
+        }
+        &__info{
+            margin: 0px 20px 0 0px;
+            position: relative;
+        }
+        &__title{
+            display: block;
+            @extend %Rubik-400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        &__date{
+            @extend %Rubik-400;
+            padding-left: 20px;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #9a9a9a;
+            position: relative;
+            &::before{
+                content: "\e909";
+                font-family: 'icomoon' !important;
+                font-size: 12px;
+                line-height: inherit;
+                color: inherit;
+                position: absolute;
+                left: 0;
+                top: -1px;
+            }
+        }
+    }
+
+}

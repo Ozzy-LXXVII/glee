@@ -1,0 +1,156 @@
+.contact{
+    &__inner{
+        padding: 120px 0 0 0;
+        text-align: center;
+    }
+    &__subtitle{
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 18px;
+        color: $color-secondary;
+        margin-bottom: 15px;
+    }
+    &__title{
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        color: $color-secondary-dark2;
+        margin-bottom: 65px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+    &__item{
+        padding: 65px 50px 75px;
+        flex: 0 1 370px;
+        background-color: #fbfbfb;
+        border: 2px solid transparent;
+        transition: all 0.3s;
+        & + .contact__item{
+            margin-left: 20px;
+        }
+        &:hover{
+            border: 2px solid $color-secondary;
+            .contact__item-icon{
+                background-color: $color-secondary;
+                svg{
+                    path{
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+    &__item-icon{
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        background-color: #fff;
+        margin: 0 auto 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s;
+        svg{
+            transition: all 0.3s;
+            path{
+                fill: $color-secondary;
+            }
+        }
+    }
+    &__item-title{
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #222;
+        margin-bottom: 20px;
+    }
+    &__item-content,
+    &__item-list,
+    &__item-link,
+    address{
+        color: #565872;
+        @extend %Rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        font-style: normal;
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+    &__form{
+        flex: 0 1 620px;
+        margin-right: 50px;
+    }
+    &__form-inner{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+    &__form-input,
+    &__form-textarea{
+        background-color: #fafafa;
+        border: none;
+        padding: 15px 20px 15px 20px;
+        color: #565872;
+        @extend %Rubik-400;
+        font-size: 16px;
+        line-height: 20px;
+        &::placeholder{
+            color: #565872;
+            background-repeat: no-repeat;
+        }
+    }
+    &__form-input{
+        flex: 0 1 300px;
+        height: 50px;
+        &::placeholder{
+            background-position: right center;
+        }
+    }
+    &__form-input--name::placeholder{
+        background-image: url(../images/icons/user-icon.svg);
+        margin-right: 20px;
+    }
+    &__form-input--email::placeholder{
+        background-image: url(../images/icons/email-icon.svg);
+    }
+    &__form-textarea{
+        width: 100%;
+        height: 175px;
+        margin-bottom: 30px;
+        resize: none;
+        &::placeholder{
+            background-image: url(../images/icons/reply-icon.svg);
+            background-position: right top;
+        }
+    }
+    &__form-btn{
+        display: block;
+        min-width: 200px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        padding: 0 20px 0 20px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 48px;
+        color: #fff;
+        background-color: $color-secondary;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover{
+            background-color: $color-secondary-dark2;
+        }
+    }
+    #map{
+        flex: 0 1 500px;
+        min-height: 335px;
+    }
+}
+  

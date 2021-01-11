@@ -4,13 +4,21 @@ body{
 }
 a,
 input,
-button{
-    outline-color: $color-text;
+button,
+textarea{
+    outline-color: $color-secondary;
+}
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
 }
 body{
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $color-secondary-dark1;
 }
 .main{
     flex: 1;
