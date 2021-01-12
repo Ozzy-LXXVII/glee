@@ -1,0 +1,353 @@
+.blog-page{
+    &__inner{
+        padding: 120px 0 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img-box{
+        display: block;
+        max-width: 830px;
+        height: 500px;
+    }
+    &__img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__post-info{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        min-width: 270px;
+        height: 70px;
+        background-color: $color-secondary;
+        position: relative;
+        top: -70px;
+    }
+    &__post-date,
+    &__post-author{
+        @extend %Rubik-400;
+        font-size: 12px;
+        color: #fff;
+        padding-left: 20px;
+        margin-right: 25px;
+        position: relative;
+        transition: all 0.3s;
+        &::before{
+            font-family: 'icomoon' !important;
+            font-size: 12px;
+            line-height: inherit;
+            color: inherit;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__post-date::before{
+        content: "\e909";
+        top: -1px;
+    }
+    &__post-author::before{
+        content: "\e908";
+    }
+    &__post-author:hover{
+        color: #000;
+        text-decoration: underline;
+    }
+    &__content-box{
+        margin: -35px 70px 0 0;
+    }
+    &__content{
+        h3{
+            margin-bottom: 30px;
+            @extend %Rubik-400;
+            font-size: 36px;
+            color: #333;
+        }
+        h4{
+            margin: 20px 0 15px;
+            @extend %Rubik-500;
+            font-size: 18px;
+            color: #333;
+        }
+        p,
+        b,
+        a,
+        blockquote{
+            @extend %Rubik-400;
+            font-size: 16px;
+            line-height: 30px;
+            color: $color-secondary-dark1;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        p{
+            margin-bottom: 30px;
+        }
+        blockquote{
+            margin-bottom: 45px;
+            background-color: #edf1f4;
+            padding: 20px 30px;
+            border-left: 7px solid $color-secondary;
+        }
+        b{
+            @extend %Rubik-500;
+        }
+        cite{
+            display: block;
+            margin-top: 8px;
+            padding-left: 45px;
+            font-style: normal;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 22px;
+                height: 4px;
+                left: 2px;
+                top: 13px;
+                background-color: $color-secondary;
+            }
+        }
+        .blog-page__img-left{
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 5px;
+        }
+    }
+    &__info{
+        padding-right: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2px solid #ebebeb;
+        border-bottom: 2px solid #ebebeb;
+        min-height: 130px;
+        margin-bottom: 60px;
+    }
+    &__info-left{
+        max-width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    &__avatar{
+        margin-right: 25px;
+        width: 75px;
+        height: 75px;
+    }
+    &__avatar-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__author-name{
+        display: inline-block;
+        margin-top: 10px;
+        @extend %Rubik-500;
+        font-size: 18px;
+        line-height: 26px;
+        color: #333;
+    }
+    &__author-position{
+        @extend %Rubik-400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #666;
+    }
+    &__info-right{
+        max-width: 48%;
+        @extend %Rubik-400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333;
+    }
+    &__share-link{
+        display: inline-block;
+        vertical-align: middle;
+        &+.blog-page__share-link{
+            margin-left: 20px;
+        }
+        fill: #a1a1a1;
+        &:hover{
+            fill: #222;
+        }
+    }
+    &__tags{
+        margin-top: 3px;
+    }
+    &__tags-title,
+    &__share-title{
+        display: inline-block;
+        min-width: 65px;
+    }
+    &__tags-link{
+        @extend %Rubik-400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #999;
+        &::after{
+            content: ',';
+        }
+        &:last-child::after{
+            content: '';
+        }
+        &:hover{
+            text-decoration: underline;
+            color: #222;
+        }
+    }
+
+    &__aside{
+        min-width: 270px;
+    }
+}
+
+.comments{
+    &__title{
+        @extend %Rubik-700;
+        font-size: 24px;
+        color: $color-secondary-dark2;
+        margin-bottom: 50px;
+    }
+    &__list{
+        margin-bottom: 55px;
+    }
+    &__item{
+        margin-left: 130px;
+        margin-bottom: 30px;
+        position: relative;
+        border-bottom: 1px solid #e0e0e0;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    &__item--reply{
+        padding-left: 130px;
+        .comments__img{
+            left: 0px;
+        }
+    }
+    &__img{
+        position: absolute;
+        left: -130px;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__header{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__username{
+        @extend %Rubik-700;
+        font-size: 16px;
+        color: $color-secondary-dark2;
+        margin: 0;
+    }
+    &__date{
+        @extend %Rubik-400;
+        font-size: 14px;
+        color: #9e9e9e;
+    }
+    &__text{
+        @extend %Rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #565872;
+        margin-bottom: 20px;
+    }
+    &__btn{
+        @extend %Rubik-400;
+        font-size: 14px;
+        line-height: 30px;
+        padding-right: 10px;
+        color: #565872;
+        margin-bottom: 30px;
+        display: inline-block;
+        position: relative;
+        &::after{
+            content: '\e90c';
+            font-family: 'icomoon' !important;
+            font-size: 14px;
+            color: inherit;
+            position: absolute;
+            right: -8px;
+            top: -2px;
+        }
+    }
+
+    &__bottom-title{
+        @extend %Rubik-700;
+        font-size: 24px;
+        color: $color-secondary-dark2;
+        margin-bottom: 45px;
+    }
+    &__form-inner{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__form-input,
+    &__form-textarea{
+        background-repeat: no-repeat;
+        border: 1px solid #e5e5e5;
+        padding: 15px 45px 15px 20px;
+        color: #333;
+        @extend %Rubik-400;
+        font-size: 16px;
+        line-height: 20px;
+        outline-color: $color-secondary;
+        :focus{
+            border-color: $color-secondary;
+        }
+        &::placeholder{
+            color: #999;
+        }
+    }
+    &__form-input{
+        flex: 0 1 400px;
+        height: 50px;
+        background-position: right 20px center;
+    }
+    &__form-input--name{
+        background-image: url(../images/icons/user-icon.svg);
+        margin-right: 30px;
+    }
+    &__form-input--email{
+        background-image: url(../images/icons/email-icon.svg);
+    }
+    &__form-textarea{
+        width: 100%;
+        height: 120px;
+        margin-bottom: 40px;
+        background-image: url(../images/icons/reply-icon.svg);
+        background-position: right 20px top 15px;
+        resize: none;
+    }
+    &__form-btn{
+        display: block;
+        min-width: 190px;
+        height: 50px;
+        border: none;
+        padding: 0 20px 0 20px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 48px;
+        color: #fff;
+        background-color: $color-secondary;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover{
+            background-color: $color-secondary-dark2;
+        }
+    }
+}

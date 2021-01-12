@@ -1,0 +1,23 @@
+.terms{
+    &__content{
+        padding: 55px 0 115px;
+    }
+    &__title{
+        @extend %Rubik-500;
+        font-size: 24px;
+        color: $color-secondary-dark1;
+        margin: 65px 0 20px;
+    }
+    &__list{
+        list-style-type: decimal-leading-zero;
+        padding-left: 30px;
+    }
+    &__list-item,
+    &__text{
+        @extend %Rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 15px;
+        color: $color-secondary-dark1;
+    }
+}

@@ -1,28 +1,780 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <title>Glee</title>
 </head>
+
 <body>
     <header class="header">
-        <div class="container">
-
+        <div class="header__inner">
+            <a class="logo" href="#">
+                <img class="logo__img" src="images/logo.png" alt="logo">
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link  menu__list-item--dropdown" href="#">
+                            Home +
+                        </a>
+                        <ul class="menu__submenu-list">
+                            <li class="menu__submenu-item">
+                                <a class="menu__submenu-link" href="product-list-1.html">Product list 1</a>
+                            </li>
+                            <li class="menu__submenu-item">
+                                <a class="menu__submenu-link" href="product-list-2.html">Product list 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Services
+                        </a>
+                    </li>
+                    <li class="menu__list-item  menu__list-item--dropdown">
+                        <a class="menu__list-link" href="#">
+                            Pages +
+                        </a>
+                        <ul class="menu__submenu-list">
+                            <li class="menu__submenu-item">
+                                <a class="menu__submenu-link" href="login.html">Login</a>
+                            </li>
+                            <li class="menu__submenu-item">
+                                <a class="menu__submenu-link" href="terms.html">Terms & Conditions</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link  menu__list-item--dropdown" href="#">
+                            News +
+                        </a>
+                        <ul class="menu__submenu-list">
+                            <li class="menu__submenu-item">
+                                <a class="menu__submenu-link" href="blog.html">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-nav">
+                <a class="user-nav__link  user-nav__link--search" href="#">
+                    <i class="icon-search"></i>
+                </a>
+                <div class="user-nav__link-wrap">
+                    <a class="user-nav__link" href="#">
+                        <i class="icon-heart"></i>
+                        <span class="user-nav__num">0</span>
+                    </a>
+                    <a class="user-nav__link" href="#">
+                        <i class="icon-cart"></i>
+                        <span class="user-nav__num">0</span>
+                    </a>
+                </div>
+                <a class="user-nav__link  user-nav__link--dots" href="#">
+                    <i class="icon-dots"></i>
+                </a>
+            </div>
         </div>
     </header>
 
     <main class="main">
+        <section class="intro">
+            <div class="intro-slider">
+                <div class="intro-slider__item-wrap">
+                    <div class="intro-slider__item  container">
+                        <div class="intro-slider__info">
+                            <h2 class="intro-slider__title">
+                                SMART AND TRENDY 1
+                            </h2>
+                            <p class="intro-slider__text">
+                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </p>
+                            <a class="intro-slider__btn" href="#">Shop Now</a>
+                        </div>
+                        <div class="intro-slider__image">
+                            <img class="intro-slider__img" src="images/slider-img1.png" alt="slider image">
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-slider__item-wrap">
+                    <div class="intro-slider__item  container">
+                        <div class="intro-slider__info">
+                            <h2 class="intro-slider__title">
+                                SMART AND TRENDY 2
+                            </h2>
+                            <p class="intro-slider__text">
+                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae facere
+                                incidunt sunt ipsum fuga eius at similique? Similique quo odio natus obcaecati debitis
+                                sunt at voluptatibus consequatur, deleniti soluta?
+                            </p>
+                            <a class="intro-slider__btn" href="#">Shop Now</a>
+                        </div>
+                        <div class="intro-slider__image">
+                            <img class="intro-slider__img" src="images/slider-img2.png" alt="slider image">
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-slider__item-wrap">
+                    <div class="intro-slider__item  container">
+                        <div class="intro-slider__info">
+                            <h2 class="intro-slider__title">
+                                SMART AND TRENDY 3
+                            </h2>
+                            <p class="intro-slider__text">
+                                Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </p>
+                            <a class="intro-slider__btn" href="#">Shop Now</a>
+                        </div>
+                        <div class="intro-slider__image">
+                            <img class="intro-slider__img" src="images/slider-img3.png" alt="slider image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="intro__items">
+                <div class="intro__item">
+                    <div class="intro__item-inner">
+                        <img class="intro__item-img" src="images/icons/intro-icon-1.svg" alt="icon">
+                        <h5 class="intro__item-title">
+                            Support 24/7.
+                        </h5>
+                        <p class="intro__item-text">
+                            Contact us 24 hours a day, <br>
+                            7 days a week.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="intro__item">
+                    <div class="intro__item-inner">
+                        <img class="intro__item-img" src="images/icons/intro-icon-2.svg" alt="icon">
+                        <h5 class="intro__item-title">
+                            Delivery.
+                        </h5>
+                        <p class="intro__item-text">
+                            Free shipping on all US order.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="intro__item">
+                    <div class="intro__item-inner">
+                        <img class="intro__item-img" src="images/icons/intro-icon-3.svg" alt="icon">
+                        <h5 class="intro__item-title">
+                            100% Payment secure.
+                        </h5>
+                        <p class="intro__item-text">
+                            We ensure secure payment
+                            with PEV.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <h3 class="title">
+                    Products of the week
+                </h3>
+                <div class="products__filter">
+                    <button class="products__filter-btn" data-filter="all">
+                        All
+                    </button>
+                    <button class="products__filter-btn" data-filter=".category-1">
+                        Furnitures
+                    </button>
+                    <button class="products__filter-btn" data-filter=".category-2">
+                        Chairs
+                    </button>
+                    <button class="products__filter-btn" data-filter=".category-3">
+                        Lighting
+                    </button>
+                    <button class="products__filter-btn" data-filter=".category-4">
+                        Decor
+                    </button>
+                </div>
+                <div class="products__items">
+
+                    <div class="products-item  mix  category-1">
+                        <a class="products-item__link" href="#">
+                            <div class="products-item__img-wrap">
+                                <img class="products-item__img" src="images/products/1.png" alt="products photo">
+                            </div>
+                        </a>
+                        <div class="products-item__info">
+                            <a class="products-item__title" href="#">
+                                Wooden radio
+                            </a>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="products-item__price"><span class="currency">$</span>29.00</div>
+                            <p class="products-item__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            </p>
+                            <div class="products-item__buttons">
+                                <a class="products-item__link-btn  products-item__link-btn--search" href="#"></a>
+                                <button class="products-item__link-btn  products-item__link-btn--cart"
+                                    type="button"></button>
+                                <button class="products-item__link-btn  products-item__link-btn--favorite"
+                                    type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-item  mix  category-3">
+                        <a class="products-item__link" href="#">
+                            <div class="products-item__img-wrap">
+                                <img class="products-item__img" src="images/products/2.png" alt="products photo">
+                            </div>
+                        </a>
+                        <div class="products-item__info">
+                            <a class="products-item__title" href="#">
+                                Wooden radio
+                            </a>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="products-item__price"><span class="currency">$</span>29.00</div>
+                            <p class="products-item__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            </p>
+                            <div class="products-item__buttons">
+                                <a class="products-item__link-btn  products-item__link-btn--search" href="#"></a>
+                                <button class="products-item__link-btn  products-item__link-btn--cart"
+                                    type="button"></button>
+                                <button class="products-item__link-btn  products-item__link-btn--favorite"
+                                    type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-item  mix  category-2">
+                        <a class="products-item__link" href="#">
+                            <div class="products-item__img-wrap">
+                                <img class="products-item__img" src="images/products/3.png" alt="products photo">
+                            </div>
+                        </a>
+                        <div class="products-item__info">
+                            <a class="products-item__title" href="#">
+                                Wooden radio
+                            </a>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="products-item__price"><span class="currency">$</span>29.00</div>
+                            <p class="products-item__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            </p>
+                            <div class="products-item__buttons">
+                                <a class="products-item__link-btn  products-item__link-btn--search" href="#"></a>
+                                <button class="products-item__link-btn  products-item__link-btn--cart"
+                                    type="button"></button>
+                                <button class="products-item__link-btn  products-item__link-btn--favorite"
+                                    type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-item  mix  category-3">
+                        <a class="products-item__link" href="#">
+                            <div class="products-item__img-wrap">
+                                <img class="products-item__img" src="images/products/4.png" alt="products photo">
+                            </div>
+                        </a>
+                        <div class="products-item__info">
+                            <a class="products-item__title" href="#">
+                                Wooden radio
+                            </a>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="products-item__price"><span class="currency">$</span>29.00</div>
+                            <p class="products-item__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            </p>
+                            <div class="products-item__buttons">
+                                <a class="products-item__link-btn  products-item__link-btn--search" href="#"></a>
+                                <button class="products-item__link-btn  products-item__link-btn--cart"
+                                    type="button"></button>
+                                <button class="products-item__link-btn  products-item__link-btn--favorite"
+                                    type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-item  mix  category-4  category-3">
+                        <a class="products-item__link" href="#">
+                            <div class="products-item__img-wrap">
+                                <img class="products-item__img" src="images/products/5.png" alt="products photo">
+                            </div>
+                        </a>
+                        <div class="products-item__info">
+                            <a class="products-item__title" href="#">
+                                Wooden radio
+                            </a>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="products-item__price"><span class="currency">$</span>29.00</div>
+                            <p class="products-item__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            </p>
+                            <div class="products-item__buttons">
+                                <a class="products-item__link-btn  products-item__link-btn--search" href="#"></a>
+                                <button class="products-item__link-btn  products-item__link-btn--cart"
+                                    type="button"></button>
+                                <button class="products-item__link-btn  products-item__link-btn--favorite"
+                                    type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-item  mix  category-4  category-2">
+                        <a class="products-item__link" href="#">
+                            <div class="products-item__img-wrap">
+                                <img class="products-item__img" src="images/products/6.png" alt="products photo">
+                            </div>
+                        </a>
+                        <div class="products-item__info">
+                            <a class="products-item__title" href="#">
+                                Wooden radio
+                            </a>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="products-item__price"><span class="currency">$</span>29.00</div>
+                            <p class="products-item__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            </p>
+                            <div class="products-item__buttons">
+                                <a class="products-item__link-btn  products-item__link-btn--search" href="#"></a>
+                                <button class="products-item__link-btn  products-item__link-btn--cart"
+                                    type="button"></button>
+                                <button class="products-item__link-btn  products-item__link-btn--favorite"
+                                    type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-item  mix  category-4">
+                        <a class="products-item__link" href="#">
+                            <div class="products-item__img-wrap">
+                                <img class="products-item__img" src="images/products/7.png" alt="products photo">
+                            </div>
+                        </a>
+                        <div class="products-item__info">
+                            <a class="products-item__title" href="#">
+                                Wooden radio
+                            </a>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="products-item__price"><span class="currency">$</span>29.00</div>
+                            <p class="products-item__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            </p>
+                            <div class="products-item__buttons">
+                                <a class="products-item__link-btn  products-item__link-btn--search" href="#"></a>
+                                <button class="products-item__link-btn  products-item__link-btn--cart"
+                                    type="button"></button>
+                                <button class="products-item__link-btn  products-item__link-btn--favorite"
+                                    type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-item  mix  category-1  category-3">
+                        <a class="products-item__link" href="#">
+                            <div class="products-item__img-wrap">
+                                <img class="products-item__img" src="images/products/8.png" alt="products photo">
+                            </div>
+                        </a>
+                        <div class="products-item__info">
+                            <a class="products-item__title" href="#">
+                                Wooden radio
+                            </a>
+                            <div class="star" data-rateyo-rating="4"></div>
+                            <div class="products-item__price"><span class="currency">$</span>29.00</div>
+                            <p class="products-item__text">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            </p>
+                            <div class="products-item__buttons">
+                                <a class="products-item__link-btn  products-item__link-btn--search" href="#"></a>
+                                <button class="products-item__link-btn  products-item__link-btn--cart"
+                                    type="button"></button>
+                                <button class="products-item__link-btn  products-item__link-btn--favorite"
+                                    type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="products-bottom">
+                <div class="products-bottom__item">
+                    <div class="products-bottom__item-image">
+                        <img class="products-bottom__item-img" src="images/products/bottom/01.png" alt="products photo">
+                    </div>
+                    <div class="products-bottom__item-info">
+                        <div class="products-bottom__item-title">
+                            Mirum Notare Tellus
+                        </div>
+                        <div class="products-bottom__item-text">
+                            LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
+                        </div>
+                        <a class="products-bottom__item-link" href="product.html">
+                            View More
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="products-bottom__item">
+                    <div class="products-bottom__item-image">
+                        <img class="products-bottom__item-img" src="images/products/bottom/02.png" alt="products photo">
+                    </div>
+                    <div class="products-bottom__item-info">
+                        <div class="products-bottom__item-title">
+                            Malesuada Tempor Euismod
+                        </div>
+                        <div class="products-bottom__item-text">
+                            50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
+                        </div>
+                        <a class="products-bottom__item-link" href="product.html">
+                            View More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="desing">
+            <div class="container">
+                <h3 class="title">
+                    New Desing
+                </h3>
+                <div class="desing__filter">
+                    <button class="desing__filter-btn" data-filter="all">
+                        All
+                    </button>
+                    <button class="desing__filter-btn" data-filter=".category-1">
+                        Furnitures
+                    </button>
+                    <button class="desing__filter-btn" data-filter=".category-2">
+                        Chairs
+                    </button>
+                    <button class="desing__filter-btn" data-filter=".category-3">
+                        Lighting
+                    </button>
+                    <button class="desing__filter-btn" data-filter=".category-4">
+                        Decor
+                    </button>
+                </div>
+
+                <div class="desing__items">
+                    <div class="desing-item  mix  category-1  category-2">
+                        <div class="desing-item__content">
+                            <h5 class="desing-item__title">
+                                <a class="desing-item__link" href="#">
+                                    Beat Flat Pendant Black
+                                </a>
+                            </h5>
+                            <p class="desing-item__text">
+                                Classic
+                            </p>
+                        </div>
+                        <img class="desing-item__img" src="images/desing/1.png" alt="products photo">
+                    </div>
+                    <div class="desing-item  mix  category-1">
+                        <div class="desing-item__content">
+                            <h5 class="desing-item__title">
+                                <a class="desing-item__link" href="#">
+                                    Lampe Sur Pieds Bamboo
+                                </a>
+                            </h5>
+                            <p class="desing-item__text">
+                                Classic
+                            </p>
+                        </div>
+                        <img class="desing-item__img" src="images/desing/2.png" alt="products photo">
+                    </div>
+                    <div class="desing-item  mix  category-2">
+                        <div class="desing-item__content">
+                            <h5 class="desing-item__title">
+                                <a class="desing-item__link" href="#">
+                                    Rattan Rocking Chair
+                                </a>
+                            </h5>
+                            <p class="desing-item__text">
+                                Classic
+                            </p>
+                        </div>
+                        <img class="desing-item__img" src="images/desing/3.png" alt="products photo">
+                    </div>
+                    <div class="desing-item  mix  category-4">
+                        <div class="desing-item__content">
+                            <h5 class="desing-item__title">
+                                <a class="desing-item__link" href="#">
+                                    Rattan Rocking Chair
+                                </a>
+                            </h5>
+                            <p class="desing-item__text">
+                                Classic
+                            </p>
+                        </div>
+                        <img class="desing-item__img" src="images/desing/4.png" alt="products photo">
+                    </div>
+                    <div class="desing-item  mix  category-2  category-4">
+                        <div class="desing-item__content">
+                            <h5 class="desing-item__title">
+                                <a class="desing-item__link" href="#">
+                                    Rattan Rocking Chair
+                                </a>
+                            </h5>
+                            <p class="desing-item__text">
+                                Classic
+                            </p>
+                        </div>
+                        <img class="desing-item__img" src="images/desing/5.png" alt="products photo">
+                    </div>
+                    <div class="desing-item  mix  category-3  category-4">
+                        <div class="desing-item__content">
+                            <h5 class="desing-item__title">
+                                <a class="desing-item__link" href="#">
+                                    Lampe Sur Pieds Bamboo
+                                </a>
+                            </h5>
+                            <p class="desing-item__text">
+                                Classic
+                            </p>
+                        </div>
+                        <img class="desing-item__img" src="images/desing/6.png" alt="products photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="video" style="background-image: url(images/video-bg.jpg);">
+            <div class="video__play">
+                <a class="video__link" href="https://www.youtube.com/watch?v=-q0gdF7b1M8&amp;autoplay=0"
+                    data-fancybox></a>
+            </div>
+        </div>
+        <section class="articles">
+            <div class="container">
+                <h3 class="title  title__articles">
+                    Our Insights & Articles
+                </h3>
+                <a class="articles__link" href="#">View All</a>
+                <div class="articles__items">
+                    <div class="articles__item">
+                        <a class="articles__img-link">
+                            <img class="articles__img" src="images/news/1.jpg" alt="news">
+                        </a>
+                        <div class="articles__item-content">
+                            <a class="articles__item-link" href="#">news</a>
+                            <a class="articles__item-text" href="#">
+                                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                            </a>
+                            <div class="articles__item-bottom">
+                                <p class="articles__item-date">
+                                    28 JANUARY, 2020
+                                </p>
+                                <a class="articles__item-author" href="#">
+                                    BY ADMIN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__item">
+                        <a class="articles__img-link">
+                            <img class="articles__img" src="images/news/2.jpg" alt="news">
+                        </a>
+                        <div class="articles__item-content">
+                            <a class="articles__item-link" href="#">news</a>
+                            <a class="articles__item-text" href="#">
+                                Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                Rncididunt ut labore et dolore magna aliqua. Ut enim
+                            </a>
+                            <div class="articles__item-bottom">
+                                <p class="articles__item-date">
+                                    28 JANUARY, 2020
+                                </p>
+                                <a class="articles__item-author" href="#">
+                                    BY ADMIN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__item">
+                        <a class="articles__img-link">
+                            <img class="articles__img" src="images/news/3.jpg" alt="news">
+                        </a>
+                        <div class="articles__item-content">
+                            <a class="articles__item-link" href="#">news</a>
+                            <a class="articles__item-text" href="#">
+                                Rncididunt ut labore et dolore magna aliqua. Ut enim
+                            </a>
+                            <div class="articles__item-bottom">
+                                <p class="articles__item-date">
+                                    28 JANUARY, 2020
+                                </p>
+                                <a class="articles__item-author" href="#">
+                                    BY ADMIN
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="partners">
+            <div class="container">
+                <div class="partners__inner">
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/1.png" alt="partner logo">
+                    </div>
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/2.png" alt="partner logo">
+                    </div>
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/3.png" alt="partner logo">
+                    </div>
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/4.png" alt="partner logo">
+                    </div>
+                    <div class="partners__item">
+                        <img class="partners__item-img" src="images/partners/5.png" alt="partner logo">
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
     <footer class="footer">
         <div class="container">
-            
+            <div class="footer__top">
+                <div class="footer__info">
+                    <a class="logo  footer__logo" href="#">
+                        <img class="logo__img" src="images/logo.png" alt="logo">
+                    </a>
+                    <address class="footer__addr">
+                        ADDRESS: 4772 Wines Lane
+                        Houston, TX 77032
+                    </address>
+                    <a class="footer__tel" href="tel:+8323475843">
+                        Telephone: +832-347-5843
+                    </a>
+                    <a class="footer__email" href="mailto:contact@Glee.com">
+                        Email: contact@Glee.com
+                    </a>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__list-title  footer__title">
+                        Services
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">About us</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Return Policy</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Our Blog</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Terms & Condition</a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-title  footer__title">
+                        Account
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Your Account</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Checkout</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Login</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a class="footer__list-link" href="#">Register</a>
+                    </li>
+                </ul>
+                <div class="footer__form">
+                    <div class="footer__form-title  footer__title">
+                        newsletter
+                    </div>
+                    <p class="footer__form-text">
+                        Subscribe by our newsletter and get update protidin.
+                    </p>
+                    <form class="footer__form-item" action="#">
+                        <input class="footer__form-input" type="email" placeholder="Email address" required>
+                        <button class="footer__form-btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__copy">
+                    ©2020 CopyRight Example. All rights reserved.
+                </div>
+                <ul class="footer__nav">
+                    <li class="footer__nav-list">
+                        <a class="footer__nav-link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="footer__nav-list">
+                        <a class="footer__nav-link" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="footer__nav-list">
+                        <a class="footer__nav-link" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="footer__nav-list">
+                        <a class="footer__nav-link" href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 
-    <script src="/js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script>
+        $(function () {
+            let mixer = mixitup('.products__items', {
+                selectors: {
+                    control: '.products__filter-btn'
+                }
+            });
+            let mixer2 = mixitup('.desing__items', {
+                selectors: {
+                    control: '.desing__filter-btn'
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
